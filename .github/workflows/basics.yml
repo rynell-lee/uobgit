@@ -44,7 +44,7 @@ jobs:
         with:
           repository: rynell-lee/uobhidden
           path: hiddenfolder
-          token: ${{ secrets.SECRETUOB }}
+          token: ${{ secrets.SECRETSUOB }}
 
       - name: print out hidden things
         run: |
