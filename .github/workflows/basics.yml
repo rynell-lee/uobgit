@@ -51,3 +51,8 @@ jobs:
           ls
           cd hiddenfolder
           ls
+      - name: send Discord notification
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{"content": "A new update has been pushed to the main branch!"}' \
+          https://discord.com/api/webhooks/1293767681069289502/4eVwiW1wmTOxcqjbv0qPn9rw5lQpfuiLIwrZ13JOW43nayW9FdCxZX6LCRhWFFIH3iyH
