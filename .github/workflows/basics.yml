@@ -61,4 +61,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.HTML_TOKEN }}
-          publish_dir: ./test.html
+          publish_dir: ./index.html
