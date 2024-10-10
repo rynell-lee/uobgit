@@ -39,18 +39,18 @@ jobs:
         run: |
               pytest
 
-      - name: Checkout Hidden Repo
-        uses: actions/checkout@v4
-        with:
-          repository: rynell-lee/uobhidden
-          path: hiddenfolder
-          token: ${{ secrets.SECRETSUOB }}
+      # - name: Checkout Hidden Repo
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: rynell-lee/uobhidden
+      #     path: hiddenfolder
+      #     token: ${{ secrets.SECRETSUOB }}
 
-      - name: print out hidden things
-        run: |
-          ls
-          cd hiddenfolder
-          ls
+      # - name: print out hidden things
+      #   run: |
+      #     ls
+      #     cd hiddenfolder
+      #     ls
       - name: discord
         uses: sebastianpopp/discord-action@releases/v2
         with:
